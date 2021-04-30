@@ -56,7 +56,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'romainl/vim-cool'    " Disable highlight search once finished.
 
     " Themes
-    Plug 'sainnhe/forest-night' 
+    Plug 'sainnhe/everforest' 
     Plug 'sainnhe/gruvbox-material'
     Plug 'sainnhe/sonokai'
     Plug 'lifepillar/vim-solarized8'
