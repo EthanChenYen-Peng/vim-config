@@ -57,6 +57,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'mileszs/ack.vim'
     Plug 'romainl/vim-cool'    " Disable highlight search once finished.
     Plug 'machakann/vim-highlightedyank' " Highlighted the yanked text.
+    
+    " LSP
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'hrsh7th/nvim-compe'
 
     " Themes
     Plug 'sainnhe/everforest' 
@@ -70,3 +74,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
 call plug#end()
+
+luafile ~/.config/nvim/lua/plugins/compe-config.lua
+
