@@ -24,6 +24,7 @@ set tm=500
 set hlsearch                    " Highlight search results.
 set incsearch                   " Search as you type.
 set ignorecase
+set inccommand=split            " Display occurence of substitude text in another split window.
 
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
@@ -54,6 +55,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'mileszs/ack.vim'
     Plug 'romainl/vim-cool'    " Disable highlight search once finished.
+    Plug 'machakann/vim-highlightedyank' " Highlighted the yanked text.
 
     " Themes
     Plug 'sainnhe/everforest' 
