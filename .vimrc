@@ -51,4 +51,14 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-repeat'
     Plug 'tomtom/tcomment_vim'
+    Plug 'tpope/vim-fugitive'
+    Plug 'mileszs/ack.vim'
+    Plug 'romainl/vim-cool'    " Disable highlight search once finished.
+
+    " Themes
+    Plug 'sainnhe/forest-night' 
+    Plug 'sainnhe/gruvbox-material'
+    Plug 'sainnhe/sonokai'
+    Plug 'lifepillar/vim-solarized8'
+    Plug 'mswift42/vim-themes'
 call plug#end()
