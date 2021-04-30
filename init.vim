@@ -57,6 +57,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'mileszs/ack.vim'
     Plug 'romainl/vim-cool'    " Disable highlight search once finished.
     Plug 'machakann/vim-highlightedyank' " Highlighted the yanked text.
+
+    " Tmux integration
+	Plug 'christoomey/vim-tmux-navigator'
     
     " LSP
     Plug 'prabirshrestha/vim-lsp'
