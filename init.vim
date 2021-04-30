@@ -59,6 +59,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'machakann/vim-highlightedyank' " Highlighted the yanked text.
     
     " LSP
+    Plug 'prabirshrestha/vim-lsp'
     Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
 
@@ -76,4 +77,5 @@ call plug#begin('~/.vim/plugged')
 call plug#end()
 
 luafile ~/.config/nvim/lua/plugins/compe-config.lua
-
+" LSP
+luafile ~/.config/nvim/lua/plugins/tsserver.lua
