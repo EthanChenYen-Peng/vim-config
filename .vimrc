@@ -8,6 +8,7 @@ set linebreak              " Don't wrap line in the middle of a word.
 set encoding=UTF-8
 set number
 set relativenumber
+set guicursor=             " Use block cursor rather than vertical line  Neovim
 
 syntax on
 filetype plugin on
