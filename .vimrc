@@ -61,4 +61,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'sainnhe/sonokai'
     Plug 'lifepillar/vim-solarized8'
     Plug 'mswift42/vim-themes'
+
+    " Appearances
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'ryanoasis/vim-devicons'
 call plug#end()
