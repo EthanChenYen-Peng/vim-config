@@ -43,3 +43,12 @@ noremap <c-k> <c-w><c-k>
 noremap <c-l> <c-w><c-l>
 nnoremap <SPACE> <Nop>
 let mapleader=' '
+
+call plug#begin('~/.vim/plugged')
+    " Essentials
+    Plug 'preservim/nerdtree'
+    Plug 'ctrlpvim/ctrlp.vim' "Fuzzy finder.
+    Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-repeat'
+    Plug 'tomtom/tcomment_vim'
+call plug#end()
