@@ -9,6 +9,7 @@ set encoding=UTF-8
 set number
 set relativenumber
 set guicursor=             " Use block cursor rather than vertical line  Neovim
+set noshowmode             " Don't show something like -- INSERT -- anymore
 
 syntax on
 filetype plugin on
@@ -61,6 +62,17 @@ call plug#begin('~/.vim/plugged')
     " Tmux integration
 	Plug 'christoomey/vim-tmux-navigator'
     
+    " Dev tools
+	Plug 'vim-test/vim-test'
+
+    " Ruby on rails
+    Plug 'vim-ruby/vim-ruby'
+	Plug 'tpope/vim-bundler'
+	Plug 'tpope/vim-rake'
+	Plug 'tpope/vim-unimpaired'
+    Plug 'tpope/rbenv-ctags'
+	Plug 'tpope/vim-rails'
+
     " LSP
     Plug 'prabirshrestha/vim-lsp'
     Plug 'neovim/nvim-lspconfig'
