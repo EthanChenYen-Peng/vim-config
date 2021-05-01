@@ -53,6 +53,18 @@ nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
 
+
+""""""""""""""
+" Resize with tmux 
+""""""""""""""
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
+
+
 call plug#begin('~/.vim/plugged')
     " Essentials
     Plug 'preservim/nerdtree'
