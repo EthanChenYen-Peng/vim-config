@@ -6,6 +6,15 @@ lspconfig.pyls.setup{on_attach=completion_callback}
 lspconfig.tsserver.setup{on_attach=completion_callback}
 lspconfig.solargraph.setup{on_attach=completion_callback}
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+lspconfig.cssls.setup{
+    on_attach=completion_callback,
+    capabilities = capabilities,
+    filetypes = { "css", "scss", "less" }
+}
+
 
 
 -- References
