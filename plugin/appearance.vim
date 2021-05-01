@@ -33,3 +33,4 @@ set expandtab	    " Expand tabs into spaces.
 
 " Make backspace work like most other programs
 set backspace=2     " Fix backspace behavior on most terminals.
+

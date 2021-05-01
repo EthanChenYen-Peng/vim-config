@@ -40,12 +40,18 @@ set wildmode=list:longest,full  " Complete till longest string, then open menu.
 " Key mapping
 """"""""""""""
 " Navigate windows with <Ctrl-hjkl> instead of <Ctrl-w> followed by hjkl.
+" asd
 noremap <c-h> <c-w><c-h>
 noremap <c-j> <c-w><c-j>
 noremap <c-k> <c-w><c-k>
 noremap <c-l> <c-w><c-l>
 nnoremap <SPACE> <Nop>
 let mapleader=' '
+" TAB in general mode will move to text buffer
+
+nnoremap <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+nnoremap <S-TAB> :bprevious<CR>
 
 call plug#begin('~/.vim/plugged')
     " Essentials
