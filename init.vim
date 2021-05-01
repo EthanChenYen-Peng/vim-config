@@ -86,6 +86,9 @@ call plug#begin('~/.vim/plugged')
     
     " Dev tools
 	Plug 'vim-test/vim-test'
+    Plug 'SirVer/ultisnips'
+    " Snippets are separated from the engine. Add this if you want them:
+    Plug 'honza/vim-snippets'
 
     " Ruby on rails
     Plug 'vim-ruby/vim-ruby'
