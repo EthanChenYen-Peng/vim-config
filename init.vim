@@ -68,14 +68,17 @@ nnoremap <leader>= :wincmd =<cr>
 call plug#begin('~/.vim/plugged')
     " Essentials
     Plug 'preservim/nerdtree'
-    Plug 'ctrlpvim/ctrlp.vim' "Fuzzy finder.
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-repeat'
     Plug 'tomtom/tcomment_vim'
     Plug 'tpope/vim-fugitive'
-    Plug 'mileszs/ack.vim'
     Plug 'romainl/vim-cool'    " Disable highlight search once finished.
     Plug 'machakann/vim-highlightedyank' " Highlighted the yanked text.
+
+    " Telescope
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
 
     " Tmux integration
 	Plug 'christoomey/vim-tmux-navigator'
