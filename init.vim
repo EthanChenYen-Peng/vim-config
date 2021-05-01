@@ -82,7 +82,7 @@ call plug#begin('~/.vim/plugged')
     " LSP
     Plug 'prabirshrestha/vim-lsp'
     Plug 'neovim/nvim-lspconfig'
-    Plug 'hrsh7th/nvim-compe'
+    Plug 'nvim-lua/completion-nvim'
 
     " Themes
     Plug 'sainnhe/everforest' 
@@ -97,6 +97,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
-luafile ~/.config/nvim/lua/plugins/compe-config.lua
+
 " LSP
-luafile ~/.config/nvim/lua/plugins/tsserver.lua
+luafile ~/.config/nvim/lua/plugins/lsp_config.lua
