@@ -48,10 +48,12 @@ noremap <c-l> <c-w><c-l>
 nnoremap <SPACE> <Nop>
 let mapleader=' '
 " TAB in general mode will move to text buffer
-
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
+
+"Remove all trailing whitespace by pressing F5
+nnoremap <leader><leader> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 
 """"""""""""""
@@ -89,6 +91,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'SirVer/ultisnips'
     " Snippets are separated from the engine. Add this if you want them:
     Plug 'honza/vim-snippets'
+    Plug 'dense-analysis/ale' " Asynchronous Lint Engine
 
     " Ruby on rails
     Plug 'vim-ruby/vim-ruby'
@@ -105,11 +108,14 @@ call plug#begin('~/.vim/plugged')
 
     " Themes
     Plug 'sainnhe/everforest' 
-    Plug 'sainnhe/gruvbox-material'
     Plug 'sainnhe/sonokai'
     Plug 'lifepillar/vim-solarized8'
     Plug 'mswift42/vim-themes'
     Plug 'crusoexia/vim-monokai'
+    Plug 'morhetz/gruvbox'
+    Plug 'rhysd/vim-color-spring-night'
+    Plug 'kaicataldo/material.vim', { 'branch': 'main' }
+    Plug 'sainnhe/edge'
 
     " Appearances
     Plug 'vim-airline/vim-airline'

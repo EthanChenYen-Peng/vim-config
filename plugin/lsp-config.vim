@@ -19,7 +19,7 @@ set completeopt=menuone,noinsert,noselect
 let g:completion_matching_strategy_list = ['exact', 'substring', 'fuzzy' ]
 
 " Disable completion auto popup
-let g:completion_enable_auto_popup = 0
+let g:completion_enable_auto_popup = 1
 
 " Use <C-n> and <C-p> to navigate through popup menu
 imap <C-n> <Plug>(completion_smart_tab)

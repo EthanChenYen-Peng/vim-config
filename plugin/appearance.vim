@@ -5,13 +5,21 @@ if has('termguicolors')
   set termguicolors
 endif
 
-set background=light
+" set background=light
+" colorscheme bergen
 " let g:everforest_background = 'hard'
 " let g:everforest_enable_italic = 1
 " let g:everforest_disable_italic_comment = 1
+" let g:sonokai_style = 'shusia'
+let g:sonokai_style = 'maia'
 
-colorscheme silkworm
-let g:airline_theme='solarized'
+let g:gruvbox_contrast_light = 'soft'
+let g:gruvbox_contrast_dark = 'soft'
+" let g:airline_theme='solarized'
+let g:material_theme_style =  'default' 
+set background=dark
+colorscheme edge
+
 """"""""""
 " Screen display 
 """"""""""
