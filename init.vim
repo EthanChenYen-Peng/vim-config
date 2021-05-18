@@ -102,9 +102,12 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tpope/vim-rails'
 
     " LSP
-    Plug 'prabirshrestha/vim-lsp'
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/completion-nvim'
+
+    " JS and React
+    Plug 'mxw/vim-jsx'
+    Plug 'pangloss/vim-javascript'
 
     " Themes
     Plug 'sainnhe/everforest' 
