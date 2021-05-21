@@ -18,7 +18,7 @@ let g:gruvbox_contrast_dark = 'soft'
 " let g:airline_theme='solarized'
 let g:material_theme_style =  'default' 
 set background=dark
-colorscheme gruvbox
+colorscheme everforest
 
 """"""""""
 " Screen display 

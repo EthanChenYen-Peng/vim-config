@@ -103,8 +103,8 @@ call plug#begin('~/.vim/plugged')
 
     " LSP
     Plug 'neovim/nvim-lspconfig'
-    Plug 'nvim-lua/completion-nvim'
-
+    Plug 'hrsh7th/nvim-compe'
+    "
     " JS and React
     Plug 'mxw/vim-jsx'
     Plug 'pangloss/vim-javascript'
@@ -129,3 +129,4 @@ call plug#end()
 
 " LSP
 luafile ~/.config/nvim/lua/plugins/lsp_config.lua
+luafile ~/.config/nvim/lua/plugins/compe-config.lua
